@@ -1,27 +1,30 @@
-# Data Science SQL Project 11
+# Data Science Python Project 11 — Pandas ile Veri Analizi
 
 ### Proje Kurulumu
 Projeyi öncelikle forklayın ve clone edin.
-Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak işimizi kolaylaştırmak adına iyi bir alışkanlıktır.
-Örnek bir Lokasyon: Code2Work/DataScience/data-project-2.
+Proje sayımız ilerledikçe proje yönetimimizi kolaylaştırmak adına projelerimizi belli klasör kalıplarında saklamak iyi bir alışkanlıktır.
+Örnek bir Lokasyon: Code2Work/DataScience/data-project-11.
 
 ### Proje Kurulumu Komutlar
-Aşağıdaki komutları sıtrayla çalıştırınız.
-* python -m venv venv
-* venv\Scripts\activate
-* pip install -r requirements.txt => Install all dependencies
-* python watch.py => Python run all tests
+Aşağıdaki komutları sırasıyla çalıştırınız.
+* `python -m venv venv`
+* `venv\Scripts\activate` (Windows) — macOS / Linux için: `source venv/bin/activate`
+* `pip install -r requirements.txt` => Tüm bağımlılıkları kurar
+* `python watch.py` => Tüm testleri çalıştırır
 
 ## Bonus
-* Eğer daha detaylı bir şekilde testlerin içerisine bakmak isterseniz
-* pytest .\tests\test_question.py -s -v 
+* Eğer daha detaylı bir şekilde testlerin içerisine bakmak isterseniz:
+* `pytest tests/test_question.py -s -v`
 
 ### Projeye Başlamadan Önce
-* Belirtilen sql querylerini yazabilmek için scripts klasörü altındaki bulunan init_db.py dosyası içerisindeki tüm queryleri 
-sırasıyla kendi local veritabanınızda çalıştırınız. 
-* Veritabanınızın hazır olduğundan emin olmak için tüm tablolara birer SELECT sorgusu atıp sonuçların doğru olduğundan emin olunuz.
-* Çalışırken sadece data klasörü altında bulunan questions.py dosyasında çalışacağız. Bunun klasör dışındaki kodları değiştirmeyiniz !
-* connect_db fonksiyonu içerisinde veritabanına bağlanma bilgileri var. Projenizi kendi localinizde test ederken burada bilgileri kendi local veritabanı bilgilerinizle değiştirerek test ediniz. Ancak kodunuzu <b>pushlarken bu veritabanı bilgilerini ilk bulduğunuz şekilde bırakınız.</b> Çünkü kodlarınız Cloud bir ortamda bu bilgilerle bir veritabanına bağlancaklardır.
+* Bu bir **Python** projesidir. Veritabanı kurulumuna, SQL sorgusuna ya da herhangi bir bağlantı ayarına **gerek yoktur**.
+* Çalışırken sadece `tasks/task_manager.py` dosyasında çalışacağız. Bu dosyanın dışındaki kodları değiştirmeyiniz!
+* Her fonksiyonun ne yapması gerektiği `tasks/task_manager.py` içindeki yorum satırlarında açıklanmıştır. Fonksiyonların içini doldurunuz.
+* Projede kullanılan veri seti repo içinde `files/cyberpunk_characters.csv` yolundadır; ayrıca bir dosya indirmenize gerek yoktur.
+* Testleri çalıştırarak doğru sonuç alıp almadığınızı adım adım kontrol edebilirsiniz.
 
 # Questions
-* task_manager.py dosyasının içerisindeki fonksiyonların içerisini doldurmaya çalışın
+* Senaryo:
+    Cyberpunk 2077 evrenindeki karakterlerin istatistiklerini içeren bir CSV dosyası elinde.
+    Pandas ile bu veriyi okuyup filtreleyecek, sıralayacak, normalize edecek ve özet istatistikler çıkaracaksın.
+* `tasks/task_manager.py` dosyasının içerisindeki fonksiyonların içerisini doldurmaya çalışın.

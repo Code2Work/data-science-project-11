@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. CSV dosyasından karakter verilerini okur.
-# Örnek input: "cyberpunk_characters.csv"
+# Örnek input: "files/cyberpunk_characters.csv"
 # Örnek output: DataFrame (shape: [3, 6])
 def load_character_data(filepath):
     pass
